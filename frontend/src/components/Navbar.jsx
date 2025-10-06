@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return (
         <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400'>
-            <img onClick={()=>navigate('/')} className='w-12 h-12 cursor-pointer' src="https://s3.envato.com/files/354725032/Thumbnail.png" alt="" />
+            <img onClick={()=>navigate('/')} className='w-30 h-20 cursor-pointer' src={assets.Profile} alt="" />
             <ul className='hidden md:flex items-start gap-5 font-medium'>
                 <NavLink to='/'>
                     <li className='py-1'>HOME</li>
@@ -34,27 +34,27 @@ const Navbar = () => {
                 {
                     token 
                     ? <div className='flex items-center gap-2 cursor-pointer group relative'>
-                        <img className='w-8 rounded-full' src="https://s3.envato.com/files/354725032/Thumbnail.png" alt="" />
-                        <img className='w-2.5' src={assets.dropdown_icon} alt="" />
+                        <img className='w-15 rounded-full relative left-4' src={assets.Profile} alt="" />
+                        <img className='w-2.5 relative' src={assets.dropdown_icon} alt="" />
                         <div className='absolute top-0 right-0 pt-6 w-32 text-base font-medium text-gray-600 z-20 hidden group-hover:block'>
                             <div className='min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4'>
                                 <p onClick={()=> navigate('myprofile') } className='hover:text-black cursor-pointer'>My Profile</p>
-                                <p onClick={() => navigate('my-appointments')} className='hover:text-black cursor-pointer'>MY Appoinments</p>
+                                <p onClick={() => navigate('my-appointments')} className='hover:text-black cursor-pointer'>My Appoinments</p>
                                 <p onClick={() => setToken(false)} className='hover:text-black cursor-pointer'>Logout</p>
                             </div>   
                         </div>
                     </div>
-                    :<button onClick={() => navigate('/login')} className='bg-[#5f6fff] text-white px-8 py-3 rounded-full font-light hidden md:block'>
+                    :<button onClick={() => navigate('/login')} className='bg-[#5f6fff] text-white px-8 py-3 rounded-full font-light hidden md:block cursor-pointer'>
                     Create account
                 </button>
                 }
-                <img onClick={()=> setShowMenu(true)} className='w-6 md:hidden' src={assets.menu_icon} alt="" />
+                <img onClick={()=> setShowMenu(true)} className='w-6 md:hidden cursor-pointer' src={assets.menu_icon} alt="" />
 
                 {/* ----- Mobile Menu------ */}
                 <div className={`${showMenu ? 'fixed w-full' : 'h-0 w-0'} md:hidden right-0 top-0 bottom-0 z-20 overflow-hidden bg-white transition-all`}>
                     <div className='flex items-center justify-between px-5 py-6'>
-                        <img className='w-36' src={assets.logo} alt="" />
-                        <img className='w-7' onClick={() => setShowMenu(false)} src={assets.cross_icon} alt="" />
+                        <img onClick={()=> navigate('/')} className='w-36 cursor-pointer' src={assets.Profile} alt="" />
+                        <img className='w-7 cursor-pointer' onClick={() => setShowMenu(false)} src={assets.cross_icon} alt="" />
                     </div>
                     <ul className='flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium'>
                         <NavLink onClick={()=>setShowMenu(false)} to='/'><p className='px-4 py-2 rounded inline-block'>Home</p></NavLink>
