@@ -4,13 +4,13 @@ import { assets } from '../assets/assets'
 const MyProfile = () => {
 
     const [userData,setUserData] = useState({
-        name: 'Hello World',
+        name: 'Kiran G',
         image: assets.profile_pic,
-        email:'helo@gmail.com',
+        email:'kiran@gmail.com',
         phone:'+91 9876543210',
         address: {
-            line1: '37th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Inavollu, Thulluru',
+            line2: 'Guntur, Andhra Pradesh'
         },
         gender:'Male',
         dob:'2000-01-20'
@@ -20,7 +20,7 @@ const MyProfile = () => {
 
     return (
         <div className='max-w-lg flex flex-col gap-2 text-sm'>
-            <img className='w-36 rounded' src={userData.image} alt="" />
+            <img className='w-45 h-40 rounded' src={userData.image} alt="" />
             {
                 isEdit 
                 ? <input className='bg-gray-50 text-3xl font-medium max-w-60 mt-4' type='text' value={userData.name} onChange={e => setUserData(prev => ({...prev,name:e.target.value}))}/>
