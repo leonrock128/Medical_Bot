@@ -96,7 +96,7 @@ export const doctors = [
         degree: 'MBBS & MD Internal Medicine',
         experience: '10+ Years',
         about: 'Dr. Girish Bathina is a General Physician at Union Hospital, Governor Peta, with 10 years of experience. He specializes in accurate diagnosis and empathetic patient care. Dr. Bathina holds an MBBS and MD in Internal Medicine, has participated in research, published papers, and received awards in his field.',
-        fees: 50,
+        fees: 400,
         address: {
             line1: 'D.No: 29, 4-7, Kodandarami Reddy St',
             line2: ' Governorpeta, Vijayawada - 520002'
@@ -110,7 +110,7 @@ export const doctors = [
         degree: 'MBBS, MS(OBG)',
         experience: '10+ Years',
         about: 'Dr. Chandana completed her MBBS at Sri Devrajurs Medical College and MS in Obstetrics & Gynaecology at JJM Medical College. She has served as Assistant Professor at SVIMS and currently at Pinnamaneni Siddhartha Institute of Medical Sciences. Skilled in procedures such as cervical biopsy, hysterectomy, C-section, and laparoscopy, she also conducts academic seminars. Certified in Obstetric and Gynecological Ultrasound by AOFOG, she founded Swarupa Fertility & Maternity Centre in 2014, where she has helped couples conceive through IUI, IVF, and natural methods. Her passion for fertility care led to opening a dedicated IVF unit in her multi-speciality hospital, supporting childless couples in achieving parenthood.',
-        fees: 60,
+        fees: 400,
         address: {
             line1: 'Kaleswararao Road',
             line2: 'Suryaraopet, Vijayawada'
@@ -124,7 +124,7 @@ export const doctors = [
         degree: 'MBBS, MD',
         experience: '10+ Years',
         about: 'Dr. Kavya has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 30,
+        fees: 400,
         address: {
             line1: 'D.No: 29, 4-7, Kodandarami Reddy St',
             line2: ' Governorpeta, Vijayawada - 520002'
@@ -138,7 +138,7 @@ export const doctors = [
         degree: 'MBBS, MD, DM',
         experience: '10+ Years',
         about: 'Dr. Prasad has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 40,
+        fees: 400,
         address: {
             line1: 'D.No: 29, 4-7, Kodandarami Reddy St',
             line2: ' Governorpeta, Vijayawada - 520002'
@@ -152,7 +152,7 @@ export const doctors = [
         degree: 'MBBS',
         experience: '10+ Years',
         about: 'Dr. Srinivas Rao has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        fees: 400,
         address: {
             line1: 'D.No: 29, 4-7, Kodandarami Reddy St',
             line2: ' Governorpeta, Vijayawada - 520002'
@@ -166,7 +166,7 @@ export const doctors = [
         degree: 'MBBS, MD, DM',
         experience: '10+ Years',
         about: 'Dr. Naveen has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        fees: 400,
         address: {
             line1: 'D.No: 29, 4-7, Kodandarami Reddy St',
             line2: ' Governorpeta, Vijayawada - 520002'
@@ -180,7 +180,7 @@ export const doctors = [
         degree: 'MBBS',
         experience: '10+ Years',
         about: 'Dr.Kalyan Chakravarthy Koganti graduated from Guntur Medical College and completed his post-graduation at Manipal Academy of Higher Education. He earned a PG certificate in Infectious Diseases from the London School of Hygiene and Tropical Medicine, UK, and is the first ID specialist of the state. He founded the Center for Infectious Diseases at Help Hospital, Guntur, and in 2019 started Samishta Hospital and Research Institute (SHRI) with AP’s first advanced ICU and fever clinic. SHRI features a state-of-the-art microbiology lab with automated systems and AI-powered patient monitoring. He has presented research on dengue, COVID, and antimicrobial resistance at international conferences. His work combines advanced diagnostics, patient care, and cutting-edge technology in infectious disease management',
-        fees: 50,
+        fees: 400,
         address: {
             line1: '4/5, Arundelpet,Donka Road',
             line2: 'Guntur, Andhra Pradesh 522002'
@@ -194,7 +194,7 @@ export const doctors = [
         degree: 'MBBS, MS, DGO',
         experience: '10+ Years',
         about: 'Dr. Priya Nandana Alaparthi is an experienced Obstetrician and Gynecologist with 18 years of practice, currently at Ramesh Hospitals, Guntur. She completed her MBBS from Mamata Medical College, Khammam, DGO from Kakatiya Medical College, Warangal, and MS in Obstetrics & Gynaecology from Katuri Medical College, Guntur. Her expertise includes painless normal delivery, pregnancy care, gynecology consultations, nuchal translucency scans, and related treatments.',
-        fees: 60,
+        fees: 400,
         address: {
             line1: 'D.No: 29, 4-7, Kodandarami Reddy St',
             line2: ' Governorpeta, Vijayawada - 520002'
@@ -208,7 +208,7 @@ export const doctors = [
         degree: 'MBBS, MD',
         experience: '10+ Years',
         about: 'Dr. Neelakanta has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 30,
+        fees: 400,
         address: {
             line1: 'D.No: 29, 4-7, Kodandarami Reddy St',
             line2: ' Governorpeta, Vijayawada - 520002'
@@ -222,7 +222,7 @@ export const doctors = [
         degree: 'MBBS, MD',
         experience: '10+ Years',
         about: 'Dr. Pragati has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 40,
+        fees: 400,
         address: {
             line1: 'D.No: 29, 4-7, Kodandarami Reddy St',
             line2: ' Governorpeta, Vijayawada - 520002'
@@ -236,7 +236,7 @@ export const doctors = [
         degree: 'MBBS, MD, DM',
         experience: '10+ Years',
         about: 'Dr. Anil Kumar has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        fees: 400,
         address: {
             line1: 'D.No: 29, 4-7, Kodandarami Reddy St',
             line2: ' Governorpeta, Vijayawada - 520002'
@@ -250,7 +250,7 @@ export const doctors = [
         degree: 'MBBS, MD, DM',
         experience: '10+ Years',
         about: 'Dr. Hari has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        fees: 400,
         address: {
             line1: 'D.No: 29, 4-7, Kodandarami Reddy St',
             line2: ' Governorpeta, Vijayawada - 520002'
@@ -264,7 +264,7 @@ export const doctors = [
         degree: 'MBBS & MD',
         experience: '10+ Years',
         about: 'Dr. Roopa Kolli is a compassionate and skilled General Physician in Vijayawada, known for her holistic, patient-centered approach. She completed her MBBS from Dr. Pinnamaneni Siddhartha Institute of Medical Sciences, Vijayawada, and MD in General Medicine from Katuri Medical College, Guntur. Dr. Roopa prioritizes listening to her patients to understand their health concerns and provides a safe, supportive environment. With expertise in internal medicine and diabetes care, she diagnoses and treats a wide range of health issues. She stays updated with the latest medical advancements to deliver the best care. Her empathy and dedication have earned her recognition among the top general medicine doctors in Vijayawada.',
-        fees: 50,
+        fees: 400,
         address: {
             line1: 'Kodandarami Reddy St,Governor Peta',
             line2: 'Vijayawada,Andhra Pradesh - 520002'
@@ -278,7 +278,7 @@ export const doctors = [
         degree: 'MBBS',
         experience: '10+ Years',
         about: 'Dr. Hema Prasanna is an experienced Obstetrician and Gynecologist with 18 years of practice, currently at Ramesh Hospitals, Guntur. She completed her MBBS from Mamata Medical College, Khammam, DGO from Kakatiya Medical College, Warangal, and MS in Obstetrics & Gynaecology from Katuri Medical College, Guntur. Her expertise includes painless normal delivery, pregnancy care, gynecology consultations, nuchal translucency scans, and related treatments.',
-        fees: 60,
+        fees: 400,
         address: {
             line1: 'D.No: 29, 4-7, Kodandarami Reddy St',
             line2: ' Governorpeta, Vijayawada - 520002'
@@ -292,7 +292,7 @@ export const doctors = [
         degree: 'MBBS, MD',
         experience: '10+ Years',
         about: 'Dr. Ranganadh has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 30,
+        fees: 400,
         address: {
             line1: 'D.No: 29, 4-7, Kodandarami Reddy St',
             line2: ' Governorpeta, Vijayawada - 520002'
