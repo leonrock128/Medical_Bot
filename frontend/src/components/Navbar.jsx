@@ -45,15 +45,15 @@ const Navbar = () => {
                         </div>
                     </div>
                     :<button onClick={() => navigate('/login')} className='bg-[#5f6fff] text-white px-8 py-3 rounded-full font-light hidden md:block cursor-pointer'>
-                    Create account
-                </button>
+                        Create account
+                    </button>
                 }
                 <img onClick={()=> setShowMenu(true)} className='w-6 md:hidden cursor-pointer' src={assets.menu_icon} alt="" />
 
                 {/* ----- Mobile Menu------ */}
                 <div className={`${showMenu ? 'fixed w-full' : 'h-0 w-0'} md:hidden right-0 top-0 bottom-0 z-20 overflow-hidden bg-white transition-all`}>
                     <div className='flex items-center justify-between px-5 py-6'>
-                        <img onClick={()=> navigate('/')} className='w-36 cursor-pointer' src={assets.Profile} alt="" />
+                        <img className='w-36' src={assets.logo} alt="" />
                         <img className='w-7 cursor-pointer' onClick={() => setShowMenu(false)} src={assets.cross_icon} alt="" />
                     </div>
                     <ul className='flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium'>
