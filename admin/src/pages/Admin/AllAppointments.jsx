@@ -2,7 +2,11 @@ import React from 'react'
 
 const AllAppointments = () => {
   return (
-    <div>AllApointments</div>
+    <div>
+      <h2>
+        Admin AllApointments
+      </h2>
+    </div>
   )
 }
 

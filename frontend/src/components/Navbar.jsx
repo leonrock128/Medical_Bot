@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return (
         <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400'>
-            <img onClick={()=>navigate('/')} className='w-12 h-12 cursor-pointer' src="https://s3.envato.com/files/354725032/Thumbnail.png" alt="" />
+            <img onClick={()=>navigate('/')} className='w-30 h-20 cursor-pointer' src={assets.Profile} alt="" />
             <ul className='hidden md:flex items-start gap-5 font-medium'>
                 <NavLink to='/'>
                     <li className='py-1'>HOME</li>
@@ -34,8 +34,8 @@ const Navbar = () => {
                 {
                     token 
                     ? <div className='flex items-center gap-2 cursor-pointer group relative'>
-                        <img className='w-8 rounded-full' src="https://s3.envato.com/files/354725032/Thumbnail.png" alt="" />
-                        <img className='w-2.5' src={assets.dropdown_icon} alt="" />
+                        <img className='w-15 rounded-full relative left-4' src={assets.Profile} alt="" />
+                        <img className='w-2.5 relative' src={assets.dropdown_icon} alt="" />
                         <div className='absolute top-0 right-0 pt-6 w-32 text-base font-medium text-gray-600 z-20 hidden group-hover:block'>
                             <div className='min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4'>
                                 <p onClick={()=> navigate('myprofile') } className='hover:text-black cursor-pointer'>My Profile</p>
