@@ -5,6 +5,7 @@ import { assets } from '../assets/assets'
 import { useNavigate } from 'react-router-dom'
 import RelatedDoctors from '../components/RelatedDoctors'
 import { toast } from 'react-toastify'
+import axios from 'axios'
 
 const Appointment = () => {
 
@@ -27,6 +28,8 @@ const Appointment = () => {
   }
 
   const getAvailableSlots = async () => {
+    if (!docInfo) return;
+    
     setDocSlots([])
 
     // getting current date
@@ -56,11 +59,25 @@ const Appointment = () => {
       while(currentDate < endTime){
         let formattedTime = currentDate.toLocaleTimeString([], {hour: '2-digit',minute:'2-digit' })
 
-        // add slot to array
+        let day = currentDate.getDate()
+        let month = currentDate.getMonth() + 1
+        let year = currentDate.getFullYear()
+
+        const slotDate = day + "-" + month + "-" + year
+        const slotTime = formattedTime
+
+        const isSlotAvailable = docInfo.slots_booked[slotDate] && docInfo.slots_booked[slotDate].includes(slotTime) ? false : true
+
+        if(isSlotAvailable) {
+          // add slot to array
         timeSlots.push({
           datetime: new Date(currentDate),
           time: formattedTime
-        })
+          })
+        }
+
+
+        
 
         //Increment current time by 30 minutes
         currentDate.setMinutes(currentDate.getMinutes()+30)
@@ -87,8 +104,27 @@ const Appointment = () => {
 
       console.log(slotDate)
 
-    } catch (error) {
+        // ✅ Get userId from AppContext or localStorage
+    // const storedUser = JSON.parse(localStorage.getItem("userData"));
+    // const userId = storedUser?._id; // Make sure _id is stored
 
+    // if (!userId) {
+    //   toast.error("User ID not found. Please re-login.");
+    //   return navigate("/login");
+    // }
+
+      const {data} = await axios.post(backendUrl + '/api/user/book-appointment',{docId,slotDate,slotTime},{headers:{token}})
+      if(data.success) {
+        toast.success(data.message)
+        getDoctorsData()
+        navigate('/my-appointments')
+      } else {
+        toast.error(data.message)
+      }
+
+    } catch (error) {
+      console.log(error);
+      toast.error(error.message)
     }
   }
 
