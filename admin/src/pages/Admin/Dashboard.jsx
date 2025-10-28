@@ -49,11 +49,11 @@ const Dashboard = () => {
       </div>
 
       <div className='bg-white'>
-          <div className='flex items-center gap-2.5 px-4 py-4 mt-10 rounded-t border'>
+          <div className='border-gray-300 flex items-center gap-2.5 px-4 py-4 mt-10 rounded-t border'>
             <img src={assets.list_icon} alt="" />
             <p className='font-semibold'>Latest Bookings</p>
           </div>
-          <div className='pt-4 border border-t-0'>
+          <div className='pt-4 border border-t-0 border-gray-300'>
             {
               dashData.latestAppointments.map((item,index) => (
                 <div className='flex items-center px-6 py-3 gap-3 hover:bg-gray-100' key={index}>
@@ -65,7 +65,9 @@ const Dashboard = () => {
                   {
                     item.cancelled 
                     ? <p className='text-red-400 text-xs font-medium'>Cancelled</p>
-                    : <img onClick={()=>cancelAppointment(item._id)} className='w-10 cursor-pointer' src={assets.cancel_icon} alt="" />
+                    : item.isCompleted
+                      ? <p className='text-green-500 text-xs font-medium'>Completed</p>
+                      : <img onClick={()=>cancelAppointment(item._id)} className='w-10 cursor-pointer' src={assets.cancel_icon} alt="" />
                   }
                 </div>
               ))

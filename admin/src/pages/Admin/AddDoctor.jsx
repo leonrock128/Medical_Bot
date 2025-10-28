@@ -75,7 +75,7 @@ const AddDoctor = () => {
 
         <p className='mb-3 text-lg font-medium'>Add Doctor</p>
 
-        <div className='bg-white px-8 py-8 border rounded w-full max-w-4xl max-h-[80vh] overflow-y-scroll'>
+        <div className='bg-white px-8 py-8 border border-gray-300 rounded w-full max-w-4xl max-h-[80vh] overflow-y-scroll'>
             <div className='flex items-center gap-4 mb-8 text-gray-500'>
                 <label htmlFor="doc-img">
                     <img className='w-16 bg-gray-100 rounded-full cursor-pointer' src={docImg ? URL.createObjectURL(docImg) : assets.upload_area} alt="" />
@@ -153,7 +153,7 @@ const AddDoctor = () => {
 
             <div>
                 <p className='mt-4 mb-2'>About Doctor</p>
-                <textarea onChange={(e)=>setAbout(e.target.value)} value={about} className='w-full px-4 pt-2 border rounded' type="text" placeholder='write about doctor' rows={5} required/>
+                <textarea onChange={(e)=>setAbout(e.target.value)} value={about} className='w-full px-4 pt-2 border border-gray-300 rounded' type="text" placeholder='write about doctor' rows={5} required/>
             </div>
 
             <button type='submit' className='bg-primary px-10 py-3 mt-4 text-white rounded-full'>Add doctor</button>
