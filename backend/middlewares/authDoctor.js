@@ -4,7 +4,8 @@ import jwt from 'jsonwebtoken'
 const authDoctor = async (req,res,next) => {
     try{
 
-        const { dtoken } = req.headers;
+        // const { dtoken } = req.headers;
+        const dtoken = req.headers['dtoken'] || req.headers['dToken'];
         if(!dtoken) {
             return res.json({success:false,message:'Not Authorized Login Again'})
         }

@@ -16,3 +16,9 @@
 *{
   font-family: Outfit;
 }
+
+@media (max-width: 360px) {
+  .custom-hide {
+    display: none;
+  }
+}
