@@ -18,7 +18,7 @@ connectCloudinary();
 // cors configuration
 const allowedOrigins = [
   'http://localhost:5173',                   // For local development
-  'https://medical-bot-eosin.vercel.app/'     // Your deployed frontend URL
+  'https://medical-bot-eosin.vercel.app'     // Your deployed frontend URL
 ];
 
 
