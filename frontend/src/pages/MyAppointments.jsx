@@ -165,7 +165,7 @@ const MyAppointments = () => {
             <div></div>
             <div className="flex flex-col gap-2 justify-end">
               {!item.cancelled && item.payment && !item.isCompleted && (
-                <button className="sm:min-w-48 py-2 border rounded text-stone-500 bg-indigo-500">
+                <button className="sm:min-w-48 py-2 border rounded text-stone-200 bg-indigo-500">
                   Paid
                 </button>
               )}
